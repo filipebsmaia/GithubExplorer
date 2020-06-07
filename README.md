@@ -1,44 +1,102 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src=".gitassets/logo.svg" alt="Logo" width="256px" />
 
-## Available Scripts
+<b>Liste seus repositórios favoritos do GitHub e veja as informações eproblemas de cada um deles!</b>
 
-In the project directory, you can run:
+<!--  Shields -->
+   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/filipebsmaia/GithubExplorer">
 
-### `yarn start`
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/filipebsmaia/GithubExplorer">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/filipebsmaia/GithubExplorer">
+  <a href="https://github.com/filipebsmaia/GithubExplorer/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/filipebsmaia/GithubExplorer">
+  </a>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <a href="https://github.com/filipebsmaia/GithubExplorer/issues">
+    <img alt="Repository issues" src="https://img.shields.io/github/issues/filipebsmaia/GithubExplorer">
+  </a>
 
-### `yarn test`
+  <img alt="GitHub" src="https://img.shields.io/github/license/filipebsmaia/GithubExplorer">
+<!--  Shields -->
+</div>
+</br>
+<div align="center">
+  <img src=".gitassets/githubexplorer.gif" alt="Logo" />
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `yarn build`
+<!-- Layout https://www.figma.com/file/9TlOcj6l7D05fZhU12xWT3/Ecoleta-(Booster)?node-id=0%3A1 -->
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Índice
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [Sobre](#sobre)
+- [Tecnologias Utilizadas](#tecnologias)
+- [Como Usar](#como-usar)
+- [Como Contribuir](#como-contribuir)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<a id="sobre"></a>
 
-### `yarn eject`
+## :bookmark: Sobre
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<p>
+O <strong>Github Explorer</strong> foi uma aplicação desenvolvida no bootcamp da rocketseat. O objetivo da aplicação listar repositorios do github e mostrar informações dos mesmos.
+<p>
+<p>
+Foram feitos algums adicionais do projeto original como o tema escuro e as tags nas issues dos repositóros.
+<p>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a id="tecnologias"></a>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :rocket: Tecnologias
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-## Learn More
+- [TypeScript](https://www.typescriptlang.org/)
+- [ReactJS](https://reactjs.org/)
+- [React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
+- [Axios](https://github.com/axios/axios)
+- [Styled Components](https://styled-components.com/)
+- [Polished](https://polished.js.org/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<a id="como-usar"></a>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## :information_source: Como usar
+
+- ### **Pré-requisitos**
+
+Para clonar a aplicação você ira precisar do [Git](https://git-scm.com), [Node.js v12.16.3](https://nodejs.org/) ou maior + [Yarn v1.17.3](https://yarnpkg.com/) ou maior instalado em seu computador. Por linha de comando:
+
+```sh
+  # Clone o repósitorio
+  $ git clone https://github.com/filipebsmaia/githubexplorer.git
+
+  # Entre na pasta
+  $ cd githubexplorer
+
+  # Instale as dependencias
+  $ yarn
+
+  # Iniciando aplicação
+  $ yarn start
+
+
+```
+
+<a id="como-contribuir"></a>
+
+## :recycle: Como contribuir
+
+- Faça um Fork desse repositório,
+- Crie uma branch com a sua feature: `git checkout -b my-feature`
+- Commit suas mudanças: `git commit -m 'feat: My new feature'`
+- Push a sua branch: `git push origin my-feature`
+
+---
+
+<div align="center">
+<h4>
+    Feito com 💜 por <a href="https://www.linkedin.com/in/filipebsmaia/" target="_blank">Filipe Maia</a>
+</h4>
+</div>

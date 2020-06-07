@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './routes';
 
-function App() {
+import GlobalStyle from './styles/global';
+import light from './styles/themes/light';
+import dark from './styles/themes/dark';
+
+const App: React.FC = () => {
+  const [theme, setTheme] = useState<DefaultTheme>(light);
+
+  const toggleTheme = () => {
+    console.log('Foi');
+    console.log(theme.title);
+    setTheme(theme.title === 'light' ? dark : light);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <Routes toggleTheme={toggleTheme} />
+      </BrowserRouter>
+      <GlobalStyle />
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
